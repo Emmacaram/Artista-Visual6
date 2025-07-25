@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentina Ríos - Arte Visual</title>
+  <style>
+    :root {
+      --color-principal: #ff7e8c;
+      --color-secundario: #ffe3e0;
+      --color-fondo: #fffaf8;
+      --color-texto: #333;
+      --color-acento: #5e548e;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--color-principal), var(--color-acento));
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--color-principal);
+      border-left: 8px solid var(--color-acento);
+      padding-left: 10px;
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    .expo-item {
+      background-color: var(--color-secundario);
+      border-left: 5px solid var(--color-acento);
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: var(--color-principal);
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: var(--color-acento);
+    }
+
+    .redes a {
+      margin-right: 15px;
+      color: var(--color-acento);
+      text-decoration: none;
+    }
+
+    .redes a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: var(--color-acento);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Valentina Ríos</h1>
+    <p>Artista visual entre el sueño y la naturaleza</p>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#obras">Obras</a>
+      <a href="#exposiciones">Exposiciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Inicio</h2>
+    <p>Valentina Ríos combina lo natural, lo emocional y lo surreal para crear obras que despiertan la sensibilidad. A través de técnicas mixtas, fusiona elementos tradicionales con medios digitales, creando una atmósfera onírica y profundamente humana.</p>
+  </section>
+
+  <section id="obras">
+    <h2>Obras</h2>
+    <div class="galeria">
+      <img src="imagenes/obra1.jpg" alt="Obra 1">
+      <img src="imagenes/obra2.jpg" alt="Obra 2">
+      <img src="imagenes/obra3.jpg" alt="Obra 3">
+      <img src="imagenes/obra4.jpg" alt="Obra 4">
+    </div>
+  </section>
+
+  <section id="exposiciones">
+    <h2>Exposiciones</h2>
+    <div class="expo-item">
+      <strong>2025 - Galería Amanecer:</strong> "Entre el agua y la piel"
+    </div>
+    <div class="expo-item">
+      <strong>2024 - Museo del Surrealismo:</strong> "Fragmentos del Inconsciente"
+    </div>
+    <div class="expo-item">
+      <strong>2023 - Encuentro de Arte Joven:</strong> "Raíces Invisibles"
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo electrónico" required />
+      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <input type="submit" value="Enviar" />
+    </form>
+    <div class="redes" style="margin-top: 20px;">
+      <p>Seguime en:</p>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://behance.net" target="_blank">Behance</a>
+      <a href="mailto:valentina.rios@email.com">Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Valentina Ríos - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
